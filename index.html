@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="input-search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Digite uma cidade" id="city" autocomplete="off">
+            <button class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="alert">
+
+        </div>
+        <div class="info">
+            <h2 class="title">
+            </h2>
+            <div class="forecast-temperature">
+                    <div class="img-icon">
+                        <img src="https:/openweathermap.org/img/wn/04d@2x.png" alt="imagem do clima" id="img">
+                    </div>
+                    <div class="temperature-info">
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                    </div>
+            </div>
+            <div class="time-info">
+                <div class="weather-data">
+                    <i class="fa-solid fa-temperature-low" style="color: rgb(150, 14, 14);"></i>
+                    <div>
+                        <p>Temp. máxima</p>
+                        <p id="temp-max"></p>
+                    </div>
+                </div>
+                <div class="weather-data">
+                    <i class="fa-solid fa-temperature-low" style="color: #1197CD;"></i>
+                    <div>
+                        <p>Tem. miníma</p>
+                        <p id="temp-min"></p>
+                    </div>
+                </div>
+                <div class="weather-data">
+                    <i class="fa-solid fa-droplet" style="color: #1197CD;"></i>
+                    <div>
+                        <p>Humidade</p>
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+                <div class="weather-data">
+                    <i class="fa-solid fa-wind" style="color: #6039C0;"></i>
+                    <div>
+                        <p>Vento</p>
+                        <p id="wind"></p>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
